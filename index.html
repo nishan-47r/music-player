@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+  
+    <header class="header container">
+      <div class="header__top">
+        <form>
+          <div class="header__top__search-bar-container">
+            <svg class="icon">
+              <use xlink:href="./assets/images/sprite.svg#search"></use>
+            </svg>
+            <input type="text" placeholder="Search" class="search-bar" />
+          </div>
+        </form>
+      </div>
+
+      <div class="header__main">
+        <div class="header__main__text">
+          <p>FEEL THE </p>
+          <h2>SONG IN EVERY DAYS</h2>
+          <p>EVERY SECOND</p>
+        </div>
+        <img
+          src="./assets/images/thalapathy2.png"
+          alt="hero Image"
+          class="hero-image"
+        />
+        <div class="header__main__background"></div>
+      </div>
+    </header>
+
+    
+
+    <section class="selection container">
+      <div class="selection__items">
+        <p class="--selected-Filter allBtn" data-filterStatus="all">All</p>
+        <p class="FavouriteBtn" data-filterStatus="favourite">Favourite</p>
+      </div>
+    </section>
+
+
+    <section class="songs-cover container">
+      <div class="song-cover__self">
+        <div class="song-cover__self__cover-image">
+          <img src="" alt="cover-image" />
+          <svg class="icon">
+            <use xlink:href="./assets/images/sprite.svg#playbutton"></use>
+          </svg>
+        </div>
+        <div class="song-cover__self__text">
+        </div>
+      </div> 
+    </section>
+
+
+    <section class="tracks-section container">
+      <h2 class="tracks-section__title">Playlist</h2>
+      <div class="tracks-container">
+        <div class="tracks__self">
+          <div class="tracks__self__left">
+            <div class="tracks__self__left__play-icon">
+              <svg class="icon">
+                <use xlink:href="./assets/images/sprite.svg#playbutton"></use>
+              </svg>
+            </div>
+            <div class="tracks__self__left__text">
+              <h2>As it was</h2>
+              <p>Harry Styles</p>
+            </div>
+          </div>
+          <div class="tracks__self__right">
+            <p class="tracks__self__right__time">5:32</p>
+            <svg class="icon tracks__self__right__icon">
+              <use xlink:href="./assets/images/sprite.svg#heart"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="song-playing-section --display-none">
+      <div class="song-playing-section__main">
+        <div class="song-playing-section__top">
+          <audio src="" class="selected-audio"></audio>
+
+          <div class="song-playing-section__top__icons">
+            <div class="container-modal">
+              <img
+                src="./assets/images/icons8-close.svg"
+                class="close-btn"
+                alt="close icon"
+              />
+               <h2 class="song-playing-section__top__songTitle">songs</h2>  
+            </div>
+          </div>
+
+          <p class="song-playing-section__top__lyric"></p>
+          <div class="makeItDarker"></div>
+          <img
+            src=""
+            alt="back"
+            class="modal-back-image"
+          />
+        </div>
+
+        <div class="song-playing-section__bottom">
+          <div class="song-playing-section__bottom__info">
+            <div class="song-playing-section__bottom__info__left">
+              <div class="song-playing-section__bottom__info__left__text">
+                <h2 class="modalLeftTitle">THE GHOST</h2>
+                <p class="modalLeftSinger">NISHAN R</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="song-playing-section__bottom__progress">
+            <div class="song-playing-section__bottom__progress__self">
+              <div class="circle-progress"></div>
+            </div>
+          </div>
+
+          <div class="song-playing-section__bottom__controls">
+            <img
+              src="./assets/images/repeat.svg"
+              alt="repeat icon"
+              class="icon repeatBtn"
+            />
+
+            <svg class="icon backBtn">
+              <use xlink:href="./assets/images/sprite.svg#back"></use>
+            </svg>
+
+            <div class="toggle-play-pause">
+              <svg class="icon pauseBtn">
+                <use xlink:href="./assets/images/sprite.svg#pause"></use>
+              </svg>
+
+              <img
+                src="./assets/images/Play.svg"
+                alt=""
+                class="icon playbutton"
+              />
+            </div>
+
+            <svg class="icon nextBtn">
+              <use xlink:href="./assets/images/sprite.svg#next"></use>
+            </svg>
+
+            <svg class="icon favIconModal">
+              <use
+                xlink:href="./assets/images/sprite.svg#heart"
+                class="--disable-click"
+              ></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
